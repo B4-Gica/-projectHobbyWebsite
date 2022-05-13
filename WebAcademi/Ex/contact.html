@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/customform.css">
+    </head>
+
+    <body>
+      <headeer>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded m-3">
+            <div class="container">
+                <a class="navbar-brand" href="hobby.html">
+
+                    <img src="images/iasilogo.png" width="80" height="35" class="d-inline-block align-top" alt="Iasi City Logo" />
+                    <p class="logo">Iasi City</p>
+                </a>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="hobby.html">Home</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="activiti.html">Activiti</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <header class="header">
+                <h1 id="title"> Iasi City Survey Form </h1>
+                <p id="description"> Thank you for taking the time to let me you feedback </p>
+            </header>
+
+            <form id="survey-form">
+
+                <div class="form-group">
+                  <label id="name-label" for="name">Name</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label id="email-label" for="email">Email</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label id="number-label" for="number">Age (optional)</label>
+                  <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+                </div>
+
+              <div class="form-group">
+                <p>What place did you like the most?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>What place did you like the most?</option>
+                <option value="art">National Theatre</option>
+                <option value="art">Metropolitan Cathedral</option>
+                <option value="art">Cetatuia Monastery</option>
+                <option value="places">Gradina Botanica</option>
+                <option value="places">Ciric Lake</option>
+                <option value="places">Bicaz National Park</option>
+                <option value="food">Oscar Restaurant</option>
+                <option value="food">Hunter House</option>
+                <option value="food">La Castel Restaurant</option>
+              </select>
+            <div class="form-group">
+            <p>Would you recommend Iasi City to a friend?</p>
+            <label id="form-1">
+              <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+              Definitely
+            </label>
+            <label id="form-1">
+              <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+              Maybe
+            </label>
+      
+            <label id="form-1"><input name="user-recommend" value="not-sure" type="radio" class="input-radio">
+              Not sure
+            </label>
+          </div>
+
+          <div class="form-group">
+            <p>Share your experience</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </div>
+            </form>
+       </div>
+       </main>
+    </body>
+    <footer>
+      &copy;Baitanu Gica 
+  </footer>
+    </html>
